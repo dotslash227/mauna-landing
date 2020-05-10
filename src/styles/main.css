@@ -1,0 +1,152 @@
+/* Main CSS Styling for Mauna Landing Page */
+@font-face{
+    font-family: 'gill';
+    src:url(../assets/gil.TTF);
+}
+
+/* For Media widths above 992 px (large and xl screens) */
+@media(min-width:992px){
+
+    /* Styling for social media links */
+    .social-icons-box{
+        margin-top:50px;
+        margin-left: auto;
+        margin-right:auto;
+        width:200px;
+
+    }
+
+    .social-icon{
+        max-width:25%;
+        margin-left: 10px;
+    }
+
+    .container-fluid{
+        margin-left:-14px;
+    }    
+
+    /* Landing Page Image PlaceHolder styling */
+    .homeImagePlaceholder{    
+        max-height:100%;
+    }
+
+    /* Styling for the wanderer of the sea */
+    .home-img{
+        max-width: 45vw;        
+    }
+    
+    /* CSS Style for right pane for pages other than home */
+    .homeContentArea2{
+        width: 50vw;
+        margin-top:120px;
+    }
+
+    /* Landing Page content area placeholder styling  */
+    .homeContentArea{
+        margin-top:auto;
+        margin-bottom:auto;
+        width: 50vw;
+    }
+
+    /* Styling for mauna logo */
+    .logo{
+        max-width: 300px;    
+        margin-top:0em;
+    }
+
+    /* Styling for the main intro text at mauna landing page */
+    .home-text{
+        margin-top:1em;
+        line-height: 1.5em;
+        color: #333333;
+        font-size:35px;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    /* Styling for the intro text above email box */
+    .info-text{
+        margin-top:2em;
+        color: #70c681;
+        font-size:1.5em;
+    }
+
+    .wandererText{
+        font-size:15px;
+        position: relative;
+        float:right;
+        text-align: right;
+        top:-120px;
+        color: white;
+        z-index:100;
+        margin-right:100px;        
+        margin-bottom:-200px;
+    }
+
+}
+
+
+/* CSS Stylings for Mobile and smaller screens */
+@media (max-width: 767px){  
+
+    body{
+        background-image: url("../assets/starry.png");
+    }
+    
+    /* Styling for social media links */
+    .social-icons-box{
+        margin-top:50px;        
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-icon{      
+        margin-right: 30px;
+        max-width: 40px;        
+    }
+
+    .homeImagePlaceholder{    
+        max-width:100%;
+        display: none;
+    }
+    .home-img{
+        max-width: 100%;
+    }
+    .container-fluid{        
+        padding-top:20px;                
+    }    
+
+    /* Landing Page Image PlaceHolder styling */
+    .homeImagePlaceholder{    
+        width:100%;
+        max-height:100%;
+    }
+
+    /* Styling for the wanderer of the sea */
+    .home-img{
+        width: 100%;
+    }
+
+    /* Landing Page content area placeholder styling  */
+
+    /* Styling for mauna logo */
+    .logo{
+        max-width: 300px;    
+        margin-top:2em;
+    }
+
+    /* Styling for the main intro text at mauna landing page */
+    .home-text{
+        margin-top:1em;
+        line-height: 1.5em;
+        color: #fff;
+        font-size:2em;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    /* Styling for the intro text above email box */
+    .info-text{
+        margin-top:2em;
+        color: #70c681;
+        font-size:1.5em;
+    }
+}

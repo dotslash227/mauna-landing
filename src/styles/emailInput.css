@@ -1,0 +1,60 @@
+/* CSS Styling for email form on mauna main landing page */
+
+.forwardIcon{    
+    color:green;
+}
+
+
+
+/* For large/medium/xl screens */
+@media(min-width:991px){
+    /* CSS Style for the email input file on mauna main landing page */
+    .email-form{
+        margin-top:2em;
+    }
+
+    .invalid-input{        
+        border:none;    
+        width:500px;        
+        text-align: center;
+        border-bottom:1px solid #333333;
+    }
+
+    .valid-input{
+        border:none;    
+        width:500px;        
+        text-align: center;
+        border-bottom:1px solid green;
+    }
+
+    /* Color change on focus of the input file on mauana main landing page */
+    .valid-input:focus, .invalid-input:focus{
+        outline-style:none;
+        box-shadow:none;        
+    }    
+}
+
+/* For smaller/mobile screens */
+@media(max-width:767px){
+    /* CSS Style for the email input file on mauna main landing page */
+    .email-form{
+        margin-top:2em;
+    }
+
+    .good-input{
+        /* margin-left:9em; */
+        border:none;    
+        width:80%;
+        border-bottom:1px solid #333333;
+        text-align: center;
+        margin-bottom:10px;
+    }
+
+    /* Color change on focus of the input file on mauana main landing page */
+    .good-input:focus{
+        outline-style:none;
+        box-shadow:none;
+        border:transparent;        
+        border-bottom:2px solid green;    
+    }
+}

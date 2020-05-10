@@ -1,0 +1,58 @@
+.bloghome-header{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: #4484a8;        
+    height: 200px;
+    width: 100%;
+    z-index:-2;
+}
+.header-title{
+    padding-top:1.5em;
+    text-align: center;    
+    color: white;
+    font-size:50px;
+    /* opacity: 0.67; */
+}
+.ink{
+    margin-top:-40px;
+    height:75px;
+    width:75px;
+}
+.blog-area{    
+    width: 65vw;
+    margin-top: 30px;    
+    margin-left:auto;
+    margin-right:auto;
+}
+.category-list{
+    padding:15px;
+    list-style: none;
+    text-align: right;    
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;    
+    font-size:20px;
+}
+.category-list li a{
+    margin-bottom:5px;        
+    color: #a9a9a9;
+    display: inline-block;
+}
+.category-list li a:hover{
+    text-decoration: none;
+    display: inline-block;
+}
+.blog-entry .title{    
+    font-size:25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.blog-entry .intro{
+    color: #9b9b9b;
+    font-size:20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top:-15px;
+}
+.author{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #9b9b9b;
+    font-size:15px;
+}

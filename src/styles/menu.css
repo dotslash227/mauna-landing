@@ -1,0 +1,65 @@
+/* Styling sheets for mauna landing page menu */
+
+
+/* ToDo: 
+1. CSS styling for Mobile Menu, how the mobile menu has to be done and placed, to be decided yet.
+2. Font family/style has to be changed to helvetica neu.
+*/
+
+@media (min-width: 992px){
+    .nav-item{
+        color:white;
+    }
+    .nav-item:hover{
+        color:white;
+    }
+    .overlay-menu{
+        background: none;
+        box-shadow: none;
+    }
+    .menu-position{
+        margin-top:-60px;
+        margin-bottom:100px;
+    }    
+    .landing-menu{
+        position: absolute;        
+        left:65vw;
+        z-index:200;        
+    }
+    .logo-area{
+        float:"left";
+        margin-left:30px;
+        margin-top:10px;
+    }
+    .navbar{
+        float: right;        
+    }
+    .bg-light{
+        background-color:white;
+    }
+    .mauna-menu{
+        font-size:30px;    
+        color: #4484a8;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: 1.5rem;
+    }
+}
+
+@media (max-width: 600px){
+    .navbar{
+        float: right;                
+    }
+    .bg-light{
+        background-color:white;
+    }
+    .mauna-menu{
+        font-size:30px;    
+        color: #4484a8;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: 1.5rem;
+    }
+}
