@@ -112,7 +112,7 @@ class BlogHome extends React.Component{
                                     <div className="author">
                                         <div className="row">
                                             <div className="col-1">
-                                                <ion-icon style={{fontSize:20}} name="person-outline"></ion-icon>
+                                                <ion-icon style={{fontSize:20}} name="person"></ion-icon>
                                             </div>
                                             <div className="col-9" style={{marginLeft:-50}}>
                                                 <p>{item.authorName}</p>

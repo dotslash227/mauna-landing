@@ -3,6 +3,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import Logo from '../assets/mauna-icon-dark.png'
+import White from '../assets/blog-bird.png';
 import 'react-responsive-modal/styles.css';
 import "../styles/menu.css";
 import { Modal } from 'react-responsive-modal';
@@ -31,7 +32,7 @@ class Menu extends React.Component{
                     <div style={{float:"left"}}>
                         {(this.props.showBird) && 
                             <div className="logo-area" >
-                                <img src={Logo} alt="mauna-logo-birdie" />
+                                <img src={White} alt="mauna-logo-birdie" />
                             </div>
                         }   
                     </div>  
@@ -46,11 +47,13 @@ class Menu extends React.Component{
                     </div>  
                 )}                
                 <div style={{float:"right", marginTop:20}}>
-                    <ion-icon name="menu-outline" onClick={()=>this.handleModal()} style={(this.props.white)?{fontSize:40,color:"white"}:{fontSize:40}}></ion-icon>
-                </div>                 
+                    <ion-icon name="menu-sharp" onClick={()=>this.handleModal()}                    
+                        size="large" style={(this.props.white)&&{color:"#9abcd0"}}>
+                    </ion-icon>
+                </div>
                 <Modal open={this.state.openModal} onClose={this.handleModal} center classNames={{modal:"overlay-menu"}}>
                     <div style={{opacity:1, width:500, textAlign:"center", fontSize:30, borderWidth:0}}>
-                        <Link style={{color:"white"}} to="/" className="nav-item nav-link active mr3">Home</Link>                        
+                        <Link to="/" className="nav-item nav-link active mr3">Home</Link>                        
                         <Link to="/team" className="nav-item nav-link active mr3">Team</Link>                    
                         <Link to="/blog" className="nav-item nav-link active mr3">Blog</Link>                                    
                     </div>
